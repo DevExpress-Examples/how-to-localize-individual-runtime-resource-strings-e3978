@@ -2,7 +2,7 @@
 *Files to look at*:
 
 * **[MainWindow.xaml](./CS/WpfApplication24/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/WpfApplication24/MainWindow.xaml))**
-* [MainWindow.xaml.cs](./CS/WpfApplication24/MainWindow.xaml.cs) (VB: [MainWindow.xaml](./VB/WpfApplication24/MainWindow.xaml))
+* [MainWindow.xaml.cs](./CS/WpfApplication24/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/WpfApplication24/MainWindow.xaml.vb))
 * [Products.cs](./CS/WpfApplication24/Products.cs) (VB: [Products.vb](./VB/WpfApplication24/Products.vb))
 <!-- default file list end -->
 # How to Localize Individual Runtime Resource Strings
