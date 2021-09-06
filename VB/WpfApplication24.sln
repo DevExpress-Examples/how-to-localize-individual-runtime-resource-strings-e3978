@@ -1,5 +1,5 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+# Visual Studio 2012
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WpfApplication24", "WpfApplication24\WpfApplication24.vbproj", "{9431B7C7-B0F3-4580-90DB-81581EF003E5}"
 EndProject
 Global
