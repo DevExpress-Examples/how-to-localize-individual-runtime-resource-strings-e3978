@@ -1,19 +1,21 @@
 <Window x:Class="WpfApplication24.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="350" Width="525" xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid">
+        xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
+        Title="MainWindow" Height="350" Width="650">
     <Grid>
-        <dxg:GridControl AutoPopulateColumns="True" Name="gridControl1">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <dxg:GridControl x:Name="grid" AutoGenerateColumns="AddNew">
             <dxg:GridControl.View>
-                <dxg:TableView Name="tableView1" ShowTotalSummary="True">
-                    <dxg:TableView.RuntimeLocalizationStrings>
-                        <dxg:GridRuntimeStringCollection>
-                            <dxg:RuntimeStringIdInfo Id="GridGroupPanelText" Value="Group Panel"/>
-                            <dxg:RuntimeStringIdInfo Id="ColumnChooserCaption" Value="Hidden Columns"/>
-                        </dxg:GridRuntimeStringCollection>
-                    </dxg:TableView.RuntimeLocalizationStrings>
-                </dxg:TableView>
+                <dxg:TableView x:Name="view" AutoWidth="True"/>
             </dxg:GridControl.View>
         </dxg:GridControl>
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <TextBox x:Name="textBox" Width="200" KeyDown="textBox_KeyDown" Margin="3,3,3,3"/>
+            <Button x:Name="button" Content="Apply" Click="button_Click" Margin="0,3,0,3"/>
+        </StackPanel>
     </Grid>
 </Window>
