@@ -15,7 +15,7 @@
         </dxg:GridControl>
         <StackPanel Grid.Row="1" Orientation="Horizontal">
             <TextBox x:Name="textBox" Width="200" KeyDown="textBox_KeyDown" Margin="3,3,3,3"/>
-            <Button x:Name="button" Content="Apply" Click="button_Click" Margin="0,3,0,3"/>
+            <Button Content="Apply" Click="Button_Click" Margin="0,3,0,3"/>
         </StackPanel>
     </Grid>
 </Window>

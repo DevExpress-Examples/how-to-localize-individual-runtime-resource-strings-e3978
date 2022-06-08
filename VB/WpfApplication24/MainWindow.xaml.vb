@@ -11,14 +11,14 @@ Namespace WpfApplication24
             Me.grid.ItemsSource = ProductList.GetProducts()
         End Sub
 
-        Public Sub LocalizeGroupPanelText()
+        Private Sub LocalizeGroupPanelText()
             Dim NewText = Me.textBox.Text
             Dim localization = New GridRuntimeStringCollection()
             localization.Add(New RuntimeStringIdInfo(GridControlRuntimeStringId.GridGroupPanelText, NewText))
             Me.view.RuntimeLocalizationStrings = localization
         End Sub
 
-        Private Sub button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+        Private Sub Button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
             LocalizeGroupPanelText()
         End Sub
 
